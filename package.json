@@ -38,6 +38,10 @@
     "eslint": "^3.18.0"
   },
   "scripts": {
-    "test": "eslint ."
+    "test": "npm run preset:default && npm run preset:node && npm run preset:test && npm run preset:style",
+    "preset:default": "eslint . --no-eslintrc --config=./index.js",
+    "preset:node": "eslint . --no-eslintrc --config=./node.js",
+    "preset:test": "eslint . --no-eslintrc --config=./test.js",
+    "preset:style": "eslint . --no-eslintrc --config=./style.js"
   }
 }
