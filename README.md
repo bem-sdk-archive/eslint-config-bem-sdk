@@ -191,6 +191,11 @@ However, due to the nature of `ESLint`, it's not always clear when a minor or ma
 
 According to our policy, any minor update may report more errors than the previous release (ex: from a bug fix). As such, we recommend using the tilde (`~`) in `package.json` e.g. `"eslint-config-bem-sdk": "~0.8.0"` to guarantee the results of your builds.
 
+Related
+-------
+
+* [eslint-config-pedant](https://github.com/blond/eslint-config-pedant/) — an ESLint Shareable Config to find errors, typos and potentially dangerous code (has no BEM SDK specificity).
+
 License
 -------
 
