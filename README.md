@@ -127,6 +127,19 @@ Use `test` preset in the `test/.eslintrc.json` file:
 }
 ```
 
+IDE support
+-----------
+
+To IDE supports all rules (`node` and `style`) use default preset in the `.eslintrc.json` file:
+
+```json
+{
+  "extends": "bem-sdk"
+}
+```
+
+To run presets separately ignore your `.eslintrc.json` file in npm scripts with `--no-eslintrc` option.
+
 License
 -------
 
