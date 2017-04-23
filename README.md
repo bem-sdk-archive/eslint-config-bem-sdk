@@ -161,6 +161,36 @@ To do this, use the following packages:
 }
 ```
 
+Semantic Versioning Policy
+--------------------------
+
+The `eslint-config-pedant` follows [semantic versioning](semver) and [ESLint's Semantic Versioning Policy](eslint-semver).
+
+[semver]: http://semver.org
+[eslint-semver]: https://github.com/eslint/eslint#semantic-versioning-policy
+
+However, due to the nature of `ESLint`, it's not always clear when a minor or major version bump occurs. To help clarify this for everyone, `ESLint` defined the following semantic versioning policy:
+
+* Patch release (intended to not break your lint build)
+    * A bug fix in a rule options that results in ESLint reporting fewer errors.
+    * Improvements to documentation.
+    * Non-user-facing changes such as refactoring code, modifying tests, and increasing examples coverage.
+    * Re-releasing after a failed release (i.e., publishing a release that doesn't work for anyone).
+    * An existing rule is replaced (if rule is deprecated) that results in ESLint reporting fewer errors.
+* Minor release (might break your lint build)
+    * A bug fix in a rule options that results in ESLint reporting more errors.
+    * An existing rule is replaced (if rule is deprecated) that results in ESLint reporting more errors.
+    * A new rule is added that does not result in ESLint reporting more errors by default.
+    * A new option to an existing rule is added that does not result in ESLint reporting more errors by default.
+    * New capabilities to the public API are added (new presets, etc.).
+* Major release (likely to break your lint build)
+    * A new rule is added that results in ESLint reporting more errors by default.
+    * A new option to an existing rule is added that results in ESLint reporting more errors by default.
+    * An existing rule is removed (if rule is not deprecated).
+    * Part of the public API is removed or changed in an incompatible way (removed presets, etc.).
+
+According to our policy, any minor update may report more errors than the previous release (ex: from a bug fix). As such, we recommend using the tilde (`~`) in `package.json` e.g. `"eslint-config-bem-sdk": "~0.8.0"` to guarantee the results of your builds.
+
 License
 -------
 
