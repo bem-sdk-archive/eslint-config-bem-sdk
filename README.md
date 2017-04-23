@@ -12,6 +12,17 @@ An ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-co
 [travis]:       https://travis-ci.org/blond/eslint-config-bem-sdk
 [test-img]:     https://img.shields.io/travis/blond/eslint-config-bem-sdk.svg?label=tests
 
+Contents
+--------
+
+* [Install](#install)
+* [Usage](#usage)
+* [Environment](#environment)
+* [Presets](#presets)
+* [IDE support](#ide-support)
+* [Other plugins](#other-plugins)
+* [Semantic Versioning Policy](#semantic-versioning-policy)
+
 Install
 -------
 
