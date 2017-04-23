@@ -57,6 +57,76 @@ Now BEM SDK modules are used in assembly systems and `bem-tools` plugins. Theref
 
 So the rules are suitable for `ECMAScript 6` or higher and designed for code that is executed in `Node.js@4+`.
 
+Presets
+-------
+
+The rules divided to presets to ensure that you could run the important checks separately from to check your codestyle. This is useful during development.
+
+Run important checks before running tests and check your codestyle after running tests.
+
+```json
+{
+  "scripts": {
+    "pretest": "npm run lint:node && npm run lint:test",
+    "posttest": "npm run lint:style",
+    "lint:node": "eslint . --no-eslintrc --config=bem-sdk/node",
+    "lint:test": "eslint test/ --no-eslintrc --config=bem-sdk/test",
+    "lint:style": "eslint . --no-eslintrc --config=bem-sdk/style",
+  }
+}
+```
+
+### Node
+
+The rules to find errors, typos and potentially dangerous code (possible errors, best practices, etc) are suitable for `Node.js@4+`.
+
+Use `node` preset in the `scripts` section of `package.json` file:
+
+```json
+{
+  "scripts": {
+    "lint:node": "eslint . --no-eslintrc --config=bem-sdk/node"
+  }
+}
+```
+
+You can override rules in modules only in specific cases. For example, your module is logging (use `console.log`), then you can disable `no-console` rule.
+
+### Style
+
+The rules to check code style (stylistic issues, etc).
+
+This preset intentionally does limit your choice of code style to support codebase of BEM SDK modules in the consistent condition.
+
+Use `style` preset in the `scripts` section of `package.json` file:
+
+```json
+{
+  "scripts": {
+    "lint:style": "eslint . --no-eslintrc --config=bem-sdk/style"
+  }
+}
+```
+
+It is not recommended to override style rules in modules.
+
+### Test
+
+The rules to find errors, typos and potentially dangerous code in tests (possible errors, best practices, etc).
+
+Now BEM SDK modules are use [AVA](ava) test runner. So basically `test` preset contains rules from [eslint-plugin-ava](ava-plugin).
+
+[ava]: https://github.com/avajs/ava
+[ava-plugin]: https://github.com/avajs/eslint-plugin-ava
+
+Use `test` preset in the `test/.eslintrc.json` file:
+
+```json
+{
+  "extends": "bem-sdk/test"
+}
+```
+
 License
 -------
 
