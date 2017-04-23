@@ -1,0 +1,34 @@
+{
+  "name": "eslint-config-bem-sdk",
+  "version": "0.0.0",
+  "description": "BEM SDK presets for eslint",
+  "license": "MPL-2.0",
+  "repository": "bem-sdk/eslint-config-bem-sdk",
+  "author": "Andrew Abramov <mail@blond.im> (github.com/blond)",
+  "keywords": [
+    "eslint",
+    "config",
+    "preset",
+    "bem",
+    "sdk",
+    "lint"
+  ],
+  "main": "index.js",
+  "files": [
+    "lib/**",
+    "index.js"
+  ],
+  "engines": {
+    "node": ">= 4"
+  },
+  "peerDependencies": {
+    "eslint": "^3.18.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^3.18.0"
+  },
+  "scripts": {
+    "test": "eslint ."
+  }
+}
