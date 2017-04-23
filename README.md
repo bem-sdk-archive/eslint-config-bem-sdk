@@ -140,6 +140,27 @@ To IDE supports all rules (`node` and `style`) use default preset in the `.eslin
 
 To run presets separately ignore your `.eslintrc.json` file in npm scripts with `--no-eslintrc` option.
 
+Other plugins
+-------------
+
+In addition, we recommend you lint `.md` and `.json` files.
+
+To do this, use the following packages:
+
+* [eslint-plugin-json](https://github.com/azeemba/eslint-plugin-json)
+* [eslint-plugin-markdown](https://github.com/eslint/eslint-plugin-markdown)
+
+**Example**
+
+```json
+{
+  "scripts": {
+    "lint:md": "eslint . --plugin=markdown --ext=.md --config=bem-sdk/style",
+    "lint:json": "eslint . --no-eslintrc --plugin=json --ext=.json"
+  }
+}
+```
+
 License
 -------
 
