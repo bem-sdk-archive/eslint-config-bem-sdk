@@ -50,6 +50,13 @@ Add this to your `.eslintrc.json` file:
 
 You can override settings from the shareable config by adding them directly into your `.eslintrc.json` file.
 
+Environment
+-----------
+
+Now BEM SDK modules are used in assembly systems and `bem-tools` plugins. Therefore, the modules support `Node.js` only.
+
+So the rules are suitable for `ECMAScript 6` or higher and designed for code that is executed in `Node.js@4+`.
+
 License
 -------
 
