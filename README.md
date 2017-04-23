@@ -12,6 +12,27 @@ An ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-co
 [travis]:       https://travis-ci.org/blond/eslint-config-bem-sdk
 [test-img]:     https://img.shields.io/travis/blond/eslint-config-bem-sdk.svg?label=tests
 
+Install
+-------
+
+You'll first need to install ESLint:
+
+```
+$ npm install eslint --save-dev
+```
+
+**Note**: You may install ESLint globally using the `-g` flag.
+
+Next, install `eslint-config-bem-sdk`:
+
+```
+$ npm install eslint-config-bem-sdk --save-dev
+```
+
+**Note**: If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-config-bem-sdk` globally.
+
+A globally-installed instance of ESLint can only use globally-installed ESLint plugins. A locally-installed ESLint can make use of both locally- and globally- installed ESLint plugins.
+
 License
 -------
 
