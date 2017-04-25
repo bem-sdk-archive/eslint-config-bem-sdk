@@ -1,7 +1,1 @@
-parserOptions:
-  ecmaVersion: 6
-
-env:
-  node: true
-
 extends: ./index.js
