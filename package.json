@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-bem-sdk",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "BEM SDK presets for eslint",
   "license": "MPL-2.0",
   "repository": "bem-sdk/eslint-config-bem-sdk",
