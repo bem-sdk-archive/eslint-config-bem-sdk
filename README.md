@@ -9,8 +9,8 @@ An ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-co
 [npm]:          https://www.npmjs.org/package/eslint-config-bem-sdk
 [npm-img]:      https://img.shields.io/npm/v/eslint-config-bem-sdk.svg
 
-[travis]:       https://travis-ci.org/blond/eslint-config-bem-sdk
-[test-img]:     https://img.shields.io/travis/blond/eslint-config-bem-sdk.svg?label=tests
+[travis]:       https://travis-ci.org/bem-sdk/eslint-config-bem-sdk
+[test-img]:     https://img.shields.io/travis/bem-sdk/eslint-config-bem-sdk.svg?label=tests
 
 Contents
 --------
