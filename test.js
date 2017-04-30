@@ -7,6 +7,6 @@ const baseStyleRules = require('./lib/test/style-rules');
 module.exports = {
     parserOptions: { ecmaVersion: 6 },
     env: { node: true },
-    plugins: ['ava', 'node', 'promise', 'unicorn'],
+    plugins: ['ava'].concat(nodePreset.plugins),
     rules: Object.assign({}, nodePreset.rules, baseTestRules, baseStyleRules)
 };
